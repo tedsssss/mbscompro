@@ -1,6 +1,6 @@
 <template>
   <section class="services-section">
-    <h2 class="section-title">Layanan Kami</h2>
+    <h2 class="section-title">Layanan</h2>
     <div class="services-container">
       <article class="service-card">
         <div class="card-content">
@@ -55,7 +55,7 @@
 
 <style scoped>
 .services-section {
-  background-color: #144885;
+  background-color: #fff;
   display: flex;
   width: 100%;
   padding: 32px 48px;
@@ -64,10 +64,14 @@
 }
 
 .section-title {
-  color: #fff;
-  font-size: 48px;
-  font-family: Oswald, -apple-system, Roboto, Helvetica, sans-serif;
-  font-weight: 700;
+  color: #144885;
+  font-size: 2.5rem;
+  font-family:
+    Oswald,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
   letter-spacing: 0.96px;
   text-align: center;
 }
@@ -78,7 +82,12 @@
   width: 100%;
   align-items: center;
   gap: 16px;
-  font-family: Montserrat, -apple-system, Roboto, Helvetica, sans-serif;
+  font-family:
+    Montserrat,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
   flex-wrap: wrap;
 }
 

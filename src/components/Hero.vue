@@ -13,7 +13,6 @@
           class="hero-logo"
         />
         <h1 class="hero-title">Pengangkutan Dan Penjualan Batu Bara Domestik & Internasional.</h1>
-        <button class="hero-button">Jelajahi lebih lanjut</button>
       </div>
     </div>
   </header>
@@ -55,7 +54,7 @@
   position: relative;
   display: flex;
   margin-bottom: -22px;
-  width: 760px;
+  width: 800px;
   max-width: 100%;
   flex-direction: column;
   align-items: flex-end;
@@ -72,7 +71,12 @@
 .hero-title {
   color: #00284e;
   font-size: 64px;
-  font-family: Oswald, -apple-system, Roboto, Helvetica, sans-serif;
+  font-family:
+    Oswald,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
   font-weight: 700;
   letter-spacing: -0.64px;
   text-align: right;
@@ -85,7 +89,12 @@
   background-color: #ed8224;
   margin-top: 16px;
   padding: 12px 32px;
-  font-family: Montserrat, -apple-system, Roboto, Helvetica, sans-serif;
+  font-family:
+    Montserrat,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
   font-size: 24px;
   color: #fff;
   font-weight: 600;

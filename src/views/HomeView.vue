@@ -5,17 +5,19 @@
       <AboutSection />
       <VisionMissionSection />
       <ServicesSection />
+      <GallerySection />
+      <ClientSection />
     </div>
   </main>
 </template>
 
 <script setup lang="ts">
-import Navbar from '../components/Navbar.vue'
 import Hero from '../components/Hero.vue'
 import AboutSection from '../components/AboutSection.vue'
 import VisionMissionSection from '../components/VisionMissionSection.vue'
 import ServicesSection from '../components/ServicesSection.vue'
-import Footer from '../components/Footer.vue'
+import GallerySection from '../components/Gallery.vue'
+import ClientSection from '../components/ClientList.vue'
 </script>
 
 <style scoped>

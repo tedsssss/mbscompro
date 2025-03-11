@@ -1,6 +1,6 @@
 <template>
   <section class="vision-mission">
-    <h2 class="section-title">Visi dan Misi Kami</h2>
+    <h2 class="section-title">Visi dan Misi</h2>
     <div class="cards-container">
       <article class="vision-card">
         <div class="card-content">
@@ -53,10 +53,14 @@
 }
 
 .section-title {
-  font-family: Oswald, -apple-system, Roboto, Helvetica, sans-serif;
-  font-size: 48px;
+  font-family:
+    Oswald,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 2.5rem;
   color: #0e335e;
-  font-weight: 700;
   text-align: center;
   letter-spacing: 0.96px;
 }
@@ -103,7 +107,12 @@
 }
 
 .card-title {
-  font-family: Oswald, -apple-system, Roboto, Helvetica, sans-serif;
+  font-family:
+    Oswald,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
   font-size: 32px;
   font-weight: 700;
   letter-spacing: 0.64px;
@@ -116,7 +125,12 @@
 .card-description {
   color: #0e335e;
   text-align: justify;
-  font-family: Montserrat, -apple-system, Roboto, Helvetica, sans-serif;
+  font-family:
+    Montserrat,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;

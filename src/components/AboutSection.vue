@@ -32,7 +32,7 @@
 
 <style scoped>
 .about-section {
-  background-color: #144885;
+  background-color: #fff;
   width: 100%;
   padding: 57px 40px;
   overflow: hidden;
@@ -45,13 +45,17 @@
 
 .about-content {
   width: 59%;
-  color: #fff;
+  color: #144885;
 }
 
 .about-title {
-  font-family: Oswald, -apple-system, Roboto, Helvetica, sans-serif;
-  font-size: 60px;
-  font-weight: 700;
+  font-family:
+    Oswald,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+    font-size: 3rem;
   letter-spacing: -1.2px;
   line-height: 1.2;
 }
@@ -59,7 +63,12 @@
 .about-description {
   margin-top: 32px;
   max-width: 744px;
-  font-family: Montserrat, -apple-system, Roboto, Helvetica, sans-serif;
+  font-family:
+    Montserrat,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
   font-size: 24px;
   font-weight: 500;
   line-height: 32px;

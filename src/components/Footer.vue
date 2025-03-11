@@ -33,12 +33,12 @@
         <h3 class="contact-title">Hubungi Kami</h3>
         <div class="contact-info">
           <div class="contact-item">
-            <span class="contact-label">Email:</span>
-            <span class="contact-value">ptmanunggalbarasejahtera@gmail.com</span>
+            <div class="contact-label">Email:</div>
+            <div class="contact-value">ptmanunggalbarasejahtera@gmail.com</div>
           </div>
           <div class="contact-item">
-            <span class="contact-label">No Telepon:</span>
-            <span class="contact-value">0811 7516 767</span>
+            <div class="contact-label">No Telepon:</div>
+            <div class="contact-value">0811 7516 767</div>
           </div>
         </div>
       </div>
@@ -58,31 +58,30 @@
 
 .footer-content {
   display: flex;
-  width: 100%;
-  padding: 64px 80px 64px 80px;
-  align-items: start;
-  gap: 128px;
   flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+  gap: 40px;
 }
 
 .logo-container {
-  flex-grow: 1;
-  flex-shrink: 1;
-  width: 147px;
+  flex: 1 1 200px;
 }
 
 .footer-logo {
-  aspect-ratio: 0.96;
+  width: 100%;
+  max-width: 150px;
   object-fit: contain;
-  object-position: center;
-  width: 184px;
-  max-width: 100%;
 }
 
-.address-container {
-  min-width: 240px;
-  font-family: Montserrat, -apple-system, Roboto, Helvetica, sans-serif;
-  font-size: 20px;
+.address-container,
+.contact-container {
+  flex: 1 1 300px;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
   color: #0f172a;
   font-weight: 400;
 }
@@ -94,42 +93,33 @@
 }
 
 .location-icon {
-  aspect-ratio: 1;
-  object-fit: contain;
-  object-position: center;
-  width: 24px;
+  width: 20px;
 }
 
 .company-name {
-  font-family: Oswald, -apple-system, Roboto, Helvetica, sans-serif;
-  font-size: 24px;
+  font-family: Oswald, sans-serif;
+  font-size: 20px;
   color: #0e335e;
   font-weight: 600;
 }
 
 .address {
-  line-height: 30px;
-  margin-top: 16px;
-}
-
-.contact-container {
-  min-width: 240px;
+  line-height: 1.5;
+  margin-top: 10px;
 }
 
 .contact-title {
   color: #0e335e;
-  font-family: Oswald, -apple-system, Roboto, Helvetica, sans-serif;
-  font-size: 24px;
+  font-family: Oswald, sans-serif;
+  font-size: 20px;
   font-weight: 600;
 }
 
 .contact-info {
   display: flex;
-  margin-top: 12px;
   flex-direction: column;
   gap: 8px;
-  font-family: Montserrat, -apple-system, Roboto, Helvetica, sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   color: #081e38;
 }
 
@@ -144,17 +134,27 @@
 .copyright {
   background-color: #ed8224;
   width: 100%;
-  padding: 8px;
-  font-family: Plus Jakarta Sans, -apple-system, Roboto, Helvetica, sans-serif;
-  font-size: 20px;
+  padding: 10px;
+  font-size: 16px;
   color: #0e335e;
   font-weight: 600;
   text-align: center;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 768px) {
   .footer-content {
-    padding: 64px 20px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .company-header {
+    justify-content: center;
+  }
+
+  .contact-info {
+    align-items: center;
   }
 }
 </style>
