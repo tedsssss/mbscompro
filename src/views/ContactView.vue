@@ -7,7 +7,7 @@
 </template>
 
 <script setup lang="ts">
-import Contact from '../components/Contact.vue'
+import Contact from '../components/contact/Contact.vue'
 </script>
 
 <style scoped>

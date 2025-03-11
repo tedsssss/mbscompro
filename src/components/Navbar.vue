@@ -4,6 +4,7 @@
       src="https://cdn.builder.io/api/v1/image/assets/TEMP/02296445cbf14921b1f1d147fb2d731db7d4d8f1bea164711d0d0d903b4b7889?placeholderIfAbsent=true&apiKey=929a5d6373ee43d387f6653f419f46f2"
       alt="Company Logo"
       class="navbar-logo"
+      href="/"
     />
     <button class="hamburger" @click="toggleMenu">☰</button>
     <div :class="['nav-links', { show: menuOpen }]">
@@ -13,8 +14,8 @@
       <div class="dropdown">
         <button class="nav-link dropdown-btn" @click="toggleDropdown">Layanan ▼</button>
         <div v-if="dropdownOpen" class="dropdown-menu">
-          <a href="#pengangkutan" class="dropdown-item">Pengangkutan Batubara</a>
-          <a href="#penjualan" class="dropdown-item">Penjualan Batubara</a>
+          <a href="/pengangkutan" class="dropdown-item">Pengangkutan Batubara</a>
+          <a href="/penjualan" class="dropdown-item">Penjualan Batubara</a>
         </div>
       </div>
 
@@ -24,15 +25,16 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, watch } from 'vue'
+import { useRoute } from 'vue-router'
 
+const route = useRoute()
 const menuOpen = ref(false)
 const dropdownOpen = ref(false)
 
 const toggleMenu = () => {
   menuOpen.value = !menuOpen.value
 
-  // Tutup dropdown saat hamburger menu tertutup
   if (!menuOpen.value) {
     dropdownOpen.value = false
   }
@@ -41,10 +43,14 @@ const toggleMenu = () => {
 const toggleDropdown = () => {
   dropdownOpen.value = !dropdownOpen.value
 }
+
+watch(route, () => {
+  menuOpen.value = false
+  dropdownOpen.value = false
+})
 </script>
 
 <style scoped>
-/* Style utama navbar */
 .navbar {
   background-color: #fff;
   display: flex;
@@ -67,7 +73,6 @@ const toggleDropdown = () => {
   position: relative;
 }
 
-/* Logo navbar */
 .navbar-logo {
   aspect-ratio: 0.95;
   object-fit: contain;
@@ -76,7 +81,6 @@ const toggleDropdown = () => {
   margin: auto 0;
 }
 
-/* Tombol hamburger */
 .hamburger {
   display: none;
   background: none;
@@ -85,7 +89,6 @@ const toggleDropdown = () => {
   cursor: pointer;
 }
 
-/* Link navbar */
 .nav-links {
   display: flex;
   align-items: center;
@@ -101,7 +104,6 @@ const toggleDropdown = () => {
   cursor: pointer;
 }
 
-/* Dropdown Styling */
 .dropdown {
   position: relative;
 }
@@ -141,7 +143,6 @@ const toggleDropdown = () => {
   background: #f2f4f9;
 }
 
-/* Responsive untuk layar kecil */
 @media (max-width: 768px) {
   .hamburger {
     display: block;
@@ -162,7 +163,7 @@ const toggleDropdown = () => {
   }
 
   .nav-links.show {
-    display: flex; /* Menampilkan menu saat hamburger ditekan */
+    display: flex;
   }
 
   .dropdown-menu {

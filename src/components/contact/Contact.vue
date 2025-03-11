@@ -38,6 +38,9 @@
       </div>
     </div>
   </section>
+  <div class="bottom-image">
+    <img src="/gunung.png" alt="Decorative Bottom Image" />
+  </div>
 </template>
 
 <script lang="ts">
@@ -117,4 +120,16 @@ export default defineComponent({
 .contact-value {
   font-weight: 400;
 }
+
+.bottom-image {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .bottom-image img {
+    width: 100%;
+    display: block;
+  }
 </style>

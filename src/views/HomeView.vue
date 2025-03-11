@@ -12,12 +12,12 @@
 </template>
 
 <script setup lang="ts">
-import Hero from '../components/Hero.vue'
-import AboutSection from '../components/AboutSection.vue'
-import VisionMissionSection from '../components/VisionMissionSection.vue'
-import ServicesSection from '../components/ServicesSection.vue'
-import GallerySection from '../components/Gallery.vue'
-import ClientSection from '../components/ClientList.vue'
+import Hero from '../components/home/Hero.vue'
+import AboutSection from '../components/home/AboutSection.vue'
+import VisionMissionSection from '../components/home/VisionMissionSection.vue'
+import ServicesSection from '../components/home/ServicesSection.vue'
+import GallerySection from '../components/home/Gallery.vue'
+import ClientSection from '../components/home/ClientList.vue'
 </script>
 
 <style scoped>
